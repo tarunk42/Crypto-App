@@ -1,4 +1,4 @@
-// import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 // import React from 'react';
 // import { StyleSheet, Text, View } from 'react-native';
 
@@ -33,6 +33,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
+      <StatusBar style="auto" />
       <Stack.Navigator
         screenOptions={{
           headerShown: false

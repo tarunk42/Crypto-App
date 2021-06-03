@@ -37,8 +37,9 @@ const Home = ({ navigation }) => {
                     borderRadius: 10,
                     backgroundColor: COLORS.white,
                     ...styles.shadow,
-                    marginBottom: SIZES.base
+                    marginBottom: SIZES.base,
                 }}
+                onPress={() => navigation.navigate("CryptoDetail", {currency: item})}
             >
                 {/* Currency */}
                 <View
@@ -103,7 +104,7 @@ const Home = ({ navigation }) => {
                                 width: 35,
                                 height: 35,
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
                             }}
                             onPress={() => console.log("Notification On Pressed!")}
                         >
@@ -138,7 +139,7 @@ const Home = ({ navigation }) => {
                     <View
                         style={{
                             position: 'absolute',
-                            bottom: '-30%'
+                            bottom: '-30%',
                         }}
                     >
                         <Text 
